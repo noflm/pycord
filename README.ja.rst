@@ -46,7 +46,7 @@ discord.pyのフォーク。 PyCordはPythonで記述されたDiscord用の最�
     py -3 -m pip install -U py-cord[voice]
 
 
-開発版をインストールしたいのならば、次の手順に従ってください:
+開発版をインストールしたいのならば、次の手順に従って下さい:
 .. code:: sh
 
     $ git clone https://github.com/Pycord-Development/pycord
