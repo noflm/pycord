@@ -31,7 +31,17 @@ If you are using Windows, then the following should be used instead: ::
     py -3 -m pip install -U py-cord
 
 
-To get voice support, you should use ``py-cord[voice]`` instead of ``pycord``, e.g. ::
+To install additional packages for speedup,  you should use ``py-cord[speed]`` instead of ``py-cord``, e.g. ::
+
+.. code:: sh
+
+    # Linux/macOS
+    python3 -m pip install -U "py-cord[speed]"
+    # Windows
+    py -3 -m pip install -U py-cord[speed]
+
+
+To get voice support, you should use ``py-cord[voice]`` instead of ``py-cord``, e.g. ::
 
     python3 -m pip install -U py-cord[voice]
 
@@ -106,7 +116,7 @@ A quick example to showcase how events work:
             print(f'Logged on as {self.user}!')
 
         async def on_message(self, message):
-            print(f'Message from {messsage.author}: {message.content}')
+            print(f'Message from {message.author}: {message.content}')
 
     client = MyClient()
     client.run('my token goes here')
